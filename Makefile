@@ -2,8 +2,8 @@ CC = gcc
 CFLAGS = -Wall -Wextra -O2 -pthread
 LDLIBS = -lsqlite3
 
-SOURCES = server.c db.c http.c
-TARGET = server_sqlite_mod
+SOURCES = server.c db.c util.c static.c router.c
+TARGET = server_modular
 
 all: $(TARGET)
 
